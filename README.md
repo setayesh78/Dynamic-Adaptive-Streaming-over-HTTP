@@ -32,7 +32,7 @@ INSERT INTO movies VALUES (6, "Schindler's List", "link", "Front/Schindlers_List
 ### Executing program
 
 ```sh
-git clone https://github.com/smmir-cent/MM_DASH.git
+git clone [https://github.com/setayesh78/Dynamic-Adaptive-Streaming-over-HTTP.git]
 docker-compose up --build
 curl localhost:3000
 ```
