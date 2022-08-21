@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- link the classes and other style codes to style.css -->
+  <link rel="stylesheet" href="Front/style.css" />
+</head>
+
+<body>
+
+  <div class="row">
+    {% for post in posts %}
+        <div class='post'>
+            <div class="column">
+                <h2>{{ post['name'] }}</p>
+                <h3>{{ post['director_name'] }}</h2>
+                <h4>{{ post['score'] }}</p>
+                  <a href="./{{ post['id'] }}">
+                <img id="{{ post['id'] }}" src="{{ post['image_path'] }}" alt="Forest" style="width:77%" href="./{{ post['id'] }}">
+                  </a>
+                <p>{{ post['description'] }}</p>
+              </div>
+        </div>
+        {% endfor %}
+  </div>
+</body>
+
+</html>
